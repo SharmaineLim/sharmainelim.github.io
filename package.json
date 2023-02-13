@@ -6,6 +6,7 @@
     "lint:format": "prettier --check '**/?(.)*.{css,js,json,md,scss,ts,tsx,yaml,yml}'"
   },
   "devDependencies": {
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "sass": "^1.58.0"
   }
 }
