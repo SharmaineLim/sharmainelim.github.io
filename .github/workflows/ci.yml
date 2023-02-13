@@ -1,4 +1,4 @@
-name: Build and deploy to Pages
+name: Test, Build & Deploy
 
 on:
   # Runs when commits are pushed targeting the default branch
