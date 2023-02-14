@@ -51,6 +51,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    # Only run this on the main branch.
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: ['check-code']
     runs-on: ubuntu-latest
     steps:
