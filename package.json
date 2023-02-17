@@ -3,6 +3,7 @@
   "name": "sharmainelim.github.io",
   "scripts": {
     "format": "prettier --write '**/?(.)*.{css,js,json,md,scss,ts,tsx,yaml,yml}'",
+    "lint:css": "stylelint --report-needless-disables 'src/assets/css/**/**'",
     "lint:format": "prettier --check '**/?(.)*.{css,js,json,md,scss,ts,tsx,yaml,yml}'",
     "dev": "vite",
     "build": "vite build",
