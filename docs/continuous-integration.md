@@ -47,7 +47,7 @@ included in the project.
 
 To use the automatic linting when making commits on your host machine, you must
 install pre-commit. You can either create a virtualenv to use with the project
-or install globally. Instructions are at (https://pre-commit.com/#install).
+or install globally. Instructions are at https://pre-commit.com/#install
 
 Pre-commit will not run by default. To set it up, run `pre-commit install`
 on your host machine if you installed pre-commit there.
