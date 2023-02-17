@@ -3,15 +3,22 @@
   "name": "sharmainelim.github.io",
   "scripts": {
     "format": "prettier --write '**/?(.)*.{css,js,json,md,scss,ts,tsx,yaml,yml}'",
+    "lint": "npm-run-all lint:css lint:js lint:format",
+    "lint:css": "stylelint --report-needless-disables 'src/assets/css/**/**'",
+    "lint:js": "eslint 'src/assets/js/**/**' --ignore-pattern **/vendor/**/**",
     "lint:format": "prettier --check '**/?(.)*.{css,js,json,md,scss,ts,tsx,yaml,yml}'",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "type": "module",
   "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.8.4",
     "sass": "^1.58.0",
+    "stylelint": "^15.1.0",
+    "stylelint-config-standard-scss": "^7.0.1",
     "vite": "^4.1.1"
   }
 }
